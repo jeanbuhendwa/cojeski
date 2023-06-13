@@ -1,48 +1,142 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 
 * {
-    font-family: 'Inter', sans-serif;
-    /* outline: 1px solid red; */
-    text-decoration: none;
+  font-family: "Inter", sans-serif;
+  /* outline: 1px solid red; */
+  text-decoration: none;
 }
 body {
-    padding-top: 80px;
-    text-align: center;
-    
+  padding-top: 70px;
+  text-align: center;
 }
 .navBar {
-    height: 80px;
-    background-color: #fff;
+  height: 70px;
+  background-color: #fff;
 }
 
-.logo-container{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: white;
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
 }
 
-.logo-container span{
-    color: #1F788C;
-    font-weight: 900;
+.logo-container span {
+  color: #1f788c;
+  font-weight: 900;
 }
 
 .logo-container .logo-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo-container .logo-box .logo-img {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
-.logo-container .logo-box span{
-    font-size: 8px;
-    font-weight: 700;
-    letter-spacing: 0;
-    color: #8C2323;
+.logo-container .logo-box span {
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #8c2323;
 }
+
+.imgSlide {
+  height: 580px;
+}
+
+.overlay {
+  position: relative;
+}
+
+.overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.overlay-content {
+  position: relative;
+}
+
+.textBranding {
+  text-shadow: 3px 3px 2px #1f788c;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 33px;
+}
+
+.brandingPara {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  color: #e3e3e3;
+  background-color: #1f788c;
+  padding: 5px 0;
+  text-transform: capitalize;
+  position: relative;
+  opacity: 0;
+}
+
+.animation {
+  animation-name: fadeInFromBottom;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(10px) scale(1.8);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animation-icon {
+  animation: bounce 1s infinite;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .imgSlide {
+    height: 600px;
+  }
+
+  .textBranding {
+    font-size: 18px;
+    margin: 30px 0;
+  }
+
+  .brandingPara {
+    font-weight: 500;
+  }
+}
+/* ---------------------- End of the navBar and branding section ---------------------------- */
+
+/* ---------------------- Start of the main section ---------------------------- */
