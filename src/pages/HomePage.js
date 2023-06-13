@@ -1,10 +1,10 @@
 import React from "react";
+import ImageSlider from "../components/imageSlider";
 const HomePage = () => {
   return (
-    <div>
-      <h1>Home Page</h1>
-      <p>This is the home page</p>
-    </div>
+    <>
+      <ImageSlider />
+    </>
   );
 };
 export default HomePage;
