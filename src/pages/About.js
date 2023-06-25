@@ -1,11 +1,7 @@
 import React from "react";
+import About from "../components/aboutInfo";
 const AboutUs = () => {
-  return (
-    <div>
-      <h1>About Us</h1>
-      <p>This is the about us page</p>
-    </div>
-  );
+  return <About />;
 };
 
 export default AboutUs;
