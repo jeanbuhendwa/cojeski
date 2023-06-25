@@ -5,7 +5,13 @@
   font-family: "Inter", sans-serif;
   /* outline: 1px solid red; */
   text-decoration: none;
+  scroll-behavior: smooth;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding-top: 70px;
   text-align: center;
@@ -15,6 +21,13 @@ body {
   background-color: #fff;
 }
 
+.MuiTabs-root {
+  margin-right: 70px;
+}
+
+.logo-container {
+  margin-left: 70px;
+}
 .logo-container {
   display: flex;
   align-items: center;
@@ -47,7 +60,7 @@ body {
 }
 
 .imgSlide {
-  height: 580px;
+  height: 100vh;
 }
 
 .overlay {
@@ -73,6 +86,12 @@ body {
   letter-spacing: 1px;
   text-transform: uppercase;
   font-size: 33px;
+  margin-bottom: 10px;
+}
+
+.iconContainer {
+  color: white;
+  text-decoration: none;
 }
 
 .brandingPara {
@@ -109,7 +128,7 @@ body {
     transform: translateY(0) scale(1);
   }
   50% {
-    transform: translateY(10px) scale(1.8);
+    transform: translateY(12px) scale(1.8);
   }
   100% {
     transform: translateY(0) scale(1);
@@ -119,11 +138,19 @@ body {
 .animation-icon {
   animation: bounce 1s infinite;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 120px;
   cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
+  .MuiTabs-root {
+    margin-right: 20px;
+  }
+  
+  .logo-container {
+    margin-left: 20px;
+  }
+
   .imgSlide {
     height: 600px;
   }
@@ -137,6 +164,436 @@ body {
     font-weight: 500;
   }
 }
-/* ---------------------- End of the navBar and branding section ---------------------------- */
+/* ---------------- End of the navBar and branding section -------------- */
 
-/* ---------------------- Start of the main section ---------------------------- */
+/* -------------------- Start of the main section --------------------- */
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 100px;
+  gap: 20px;
+}
+
+.card-container .cardBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  height: 420px;
+  width: 350px;
+  padding: 20px;
+  border: 1px solid #d5d5d5;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: capitalize;
+  transition: 0.3s all ease-in-out;
+}
+
+.card-container .cardBox:hover {
+  background: #d5d5d5;
+}
+
+.card-container .cardBox img {
+  width: 120px;
+  height: 120px;
+}
+
+.card-container .cardBox .cardText {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #8c2323;
+}
+
+.card-container .cardBox .cardPara {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #1f788c;
+}
+
+.card-container .cardBox .cardBtn {
+  background-color: #8c2323;
+  color: #d9adad;
+  padding: 8px 15px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-container .cardBox .cardBtn:hover {
+  background-color: #d9adad;
+  color: #8c2323;
+  padding: 8px 20px;
+  letter-spacing: 1px;
+}
+
+.modalStyle {
+  margin-top: 50px;
+}
+
+.modalTitle {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #8c2323;
+}
+
+.modal-intro {
+  font-weight: 700;
+  font-size: 16px;
+  margin-right: 20px;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-intro span {
+  font-weight: 900;
+  font-size: 30px;
+  color: #9b9b9b;
+}
+
+.modalImgContainer {
+  display: grid;
+  grid-template-columns: 40% 55%;
+  gap: 5%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.imgWho {
+  width: 100%;
+  height: 200px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.316);
+  border-radius: 4px;
+}
+
+.modalStyle .modal-dialog {
+  width: 80%;
+  max-width: 800px;
+}
+
+.modalStyle .modal-body {
+  overflow-y: auto;
+}
+
+.list-wwdo {
+  padding: 10px 20px;
+}
+
+.list-wwdo li {
+  margin: 10px 0;
+}
+
+.joinUs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0 30px;
+}
+
+.joinUs-container .btnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+}
+
+.joinUs-container .btnContainer button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #f2f2f2;
+  color: #1f788c;
+  border: 1px solid #1f788c;
+  font-weight: 600;
+  transition: 0.3s all ease-in-out;
+}
+
+.joinUs-container .btnContainer button:hover {
+  background-color: #1f788c;
+  color: #f2f2f2;
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    padding: 80px 20px;
+  }
+
+  .modalStyle {
+    margin-top: 70px;
+  }
+
+  .modalStyle .modal-dialog {
+    width: 96%;
+  }
+
+  .modalImgContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .modal-intro {
+    font-weight: 700;
+    font-size: 16px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+  }
+}
+
+/* -------------------- End of the main section --------------------- */
+
+/* -------------------- Start of the footer section --------------------- */
+.contact-container {
+  display: grid;
+  grid-template-columns: 55% 45%;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  background: #1f788c;
+  padding: 150px 100px 120px;
+}
+
+.quote-container .quote {
+  color: #f2f2f2;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-container .quote span {
+  color: #d9adad;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.quote-container .social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-container .social-media p {
+  color: #d9adad;
+  text-shadow: 1px 1px #111111;
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #bf6b6b;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 20%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+#typing-animation {
+  animation: typing 5s infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid;
+}
+
+.quote-container .social-media ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+  text-decoration: none;
+  margin-top: 20px;
+  margin-left: -50px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.quote-container .social-media ul li a {
+  color: #f2f2f2;
+  font-size: 20px;
+  transition: 0.3s all ease-in-out;
+}
+
+.quote-container .social-media ul li a:hover {
+  color: #d9adad;
+  display: inline-block;
+  animation: bounce 1s infinite;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f2f2f2;
+  padding: 150px 100px 120px 60px;
+}
+
+.form-container h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #0c3943;
+  margin-bottom: 30px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.form-container form input,
+.form-container form textarea {
+  width: 380px;
+  padding: 10px 20px;
+  border: 1px solid #1f788c;
+  border-radius: 4px;
+}
+
+.submitForm {
+  background-color: #f2f2f2;
+  color: #1f788c;
+  border: 1px solid #1f788c;
+  font-weight: 600;
+  padding: 10px 30px;
+  font-size: 18px;
+  border-radius: 2px;
+  transition: 0.3s all ease-in-out;
+}
+
+.submitForm:hover {
+  background-color: #1f788c;
+  color: #f2f2f2;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-container {
+    justify-content: center;
+    padding: 150px 60px 120px 60px;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  border-top: 2px solid #1f788c;
+}
+
+.footer .footer-img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer .footer-img img {
+  width: 80px;
+  height: 70px;
+}
+
+.footer-text {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  color: #454545e0;
+}
+
+.footer-text .spantext {
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .footer .footer-img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+/* -------------------- End of the footer section --------------------- */
+
+/* --------------------- Start the about page --------------------- */
+.aboutPage {
+  padding: 50px 100px;
+}
+
+.aboutPage .aboutUs {
+  font-size: 35px;
+  font-weight: 700;
+  color: #0c3943;
+  border-bottom: 2px solid #1f788c;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.aboutPage .aboutUsP {
+  font-size: 18px;
+  line-height: 28px;
+  color: #4c4b4b;
+  font-weight: 500;
+  text-align: justify;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutPage {
+    padding: 30px 20px;
+  }
+
+  .aboutPage .aboutUsP {
+    font-size: 20px;
+  }
+}
+/* --------------------- End of the about page --------------------- */

@@ -7,7 +7,6 @@ import {
   Toolbar,
   useMediaQuery,
   useTheme,
-  Typography,
   createTheme,
   ThemeProvider,
 } from "@mui/material";
