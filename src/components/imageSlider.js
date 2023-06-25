@@ -27,9 +27,9 @@ const ImageSlider = () => {
               brings together various interests parties which are involved in
               human rights without exclusion
             </p>
-            <div className="iconContainer">
+            <a href="#homeCard" className="iconContainer">
               <KeyboardDoubleArrowDownIcon className="animation-icon" />
-            </div>
+            </a>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={3500}>
@@ -50,9 +50,9 @@ const ImageSlider = () => {
               brings together various interests parties which are involved in
               human rights without exclusion
             </p>
-            <div className="iconContainer">
+            <a href="#homeCard" className="iconContainer">
               <KeyboardDoubleArrowDownIcon className="animation-icon" />
-            </div>
+            </a>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={3500}>
@@ -73,9 +73,9 @@ const ImageSlider = () => {
               brings together various interests parties which are involved in
               human rights without exclusion
             </p>
-            <div className="iconContainer">
+            <a href="#homeCard" className="iconContainer">
               <KeyboardDoubleArrowDownIcon className="animation-icon" />
-            </div>
+            </a>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={3500}>
@@ -96,9 +96,9 @@ const ImageSlider = () => {
               brings together various interests parties which are involved in
               human rights without exclusion
             </p>
-            <div className="iconContainer">
+            <a href="#homeCard" className="iconContainer">
               <KeyboardDoubleArrowDownIcon className="animation-icon" />
-            </div>
+            </a>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

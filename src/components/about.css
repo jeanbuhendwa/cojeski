@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+.list-group .active {
+  background-color: #1f788c;
+  border: none;
+}
+
+.accordion-button {
+  background-color: #1f788c25;
+  color: #1f788c;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #1f788c61;
+  color: #1f788c;
+  box-shadow: none;
+}
+
+.tab-pane {
+  font-size: 16px;
+  line-height: 24px;
+  color: #4c4b4b;
+  font-weight: 500;
+  text-align: justify;
+  margin-bottom: 50px;
+}
+
+.tab-pane ul {
+  list-style: square;
+  margin: 10px 0;
+}
+
+.aboutCard {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.cardItem {
+  border: 1px solid #e9e9e9;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 35% auto 15%;
+  width: 15rem;
+}
+
+.cardImg {
+  width: 100%;
+  height: 120px;
+  margin: 10px 0;
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #4c4b4b;
+}
+
+.cardText {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.cardBtn {
+  margin: auto;
+  width: 50%;
+  background-color: #f2f2f2;
+  color: #1f788c;
+  border: 1px solid #1f788c;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 2px;
+  transition: 0.3s all ease-in-out;
+}
+
+.cardBtn:hover {
+  background-color: #1f788c;
+  color: #f2f2f2;
+}
+
+@media screen and (max-width: 768px) {
+  .fixed-list {
+    position: sticky;
+    top: 72px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+  }
+
+  .aboutCard {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .cardItem {
+    grid-template-rows: 40% auto 15%;
+    height: 450px;
+    width: 80%;
+  }
+
+  .cardTitle {
+    font-size: 18px;
+  }
+
+  .cardText {
+    font-size: 16px;
+  }
+}
