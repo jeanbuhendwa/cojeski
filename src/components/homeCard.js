@@ -25,7 +25,7 @@ const HomeCard = () => {
           <h1 className="cardText">who we are</h1>
           <p className="cardPara">
             COJESKI is a human rights Forum by nature and brings together
-            ed parties which are involved in human rights
+            ed e involved in human rights
             without exclusion.
           </p>
           <button className="cardBtn" onClick={toggleModal1}>
