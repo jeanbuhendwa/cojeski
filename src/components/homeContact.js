@@ -9,7 +9,7 @@ const HomeContact = () => {
         <div className="quote-container">
           <p className="quote">
             <span>‟</span>To deny people their human rights, is to challenge
-            their verNelson Mandela"
+            their Mandela"
           </p>
           <div className="social-media">
             <p id="typing-animation">Follow Us</p>
