@@ -24,8 +24,7 @@ const ImageSlider = () => {
             </h3>
             <p className="brandingPara animation">
               {" "}
-              brings together various interests parties which are involved in
-              human rights without exclusion
+              out exclusion
             </p>
             <a href="#homeCard" className="iconContainer">
               <KeyboardDoubleArrowDownIcon className="animation-icon" />
